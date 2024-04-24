@@ -1,0 +1,46 @@
+/* Custom styles for the payment page */
+
+body{
+    background-image: linear-gradient(to top , yellow , violet );
+}
+
+.container {
+    margin-top: 60px;
+    border: 4px double black;
+    width: 400px;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px purple;
+}
+.container h2{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#paymentResult {
+    margin-top: 20px;
+}
+
+#paymentForm {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.btn-primary {
+    width: 100%;
+    align-items: center;
+}
+
+
+
+.alert-success {
+    margin-top: 20px;
+}
+.welcome{
+    font-size: 1rem;
+    text-align: center;
+}
