@@ -1,0 +1,18 @@
+body{
+    background-image: linear-gradient(blue, purple);
+} 
+main{
+    width: 60vw;
+	padding: 36px 24px;
+	font-family: var(--poppins);
+    border: 4px double;
+    box-shadow: 20px 20px 10px yellow;
+    text-align: center;
+    margin-top: 20px;
+   margin-left: 22%;
+    /* width: 1; */
+    height: 30rem;
+    background-color: white;
+
+}
+

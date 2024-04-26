@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookings</title>
+    <link rel="stylesheet" href="mybooking.css">
+</head>
+<body>
+    <h1 style="color: yellow; text-align: center;">Vindhya<span style="color: black;">Motors</span></h1>
+    <main>
+        <div class="booking1">
+            <h1>My Bookings</h1>
+            <span class="orders"></span>
+            <div id="bookingDetails"></div>
+        </div>
+    </main>
+
+    <script>
+        var totalPrice = localStorage.getItem('totalPrice');
+
+        // Display booking details
+        var bookingDetails = document.getElementById('bookingDetails');
+        if (totalPrice) {
+            bookingDetails.innerHTML = `
+
+                <p>Total Amount Paid: Rs${totalPrice}</p>
+                <p>Thank you for booking! Our executive will contact you shortly.</p>
+            `;
+        } else {
+            bookingDetails.innerHTML = '<p>No booking details found.</p>';
+        }
+
+        // Clear local storage after displaying detail
+        localStorage.removeItem('totalPrice');
+    </script>
+</body>
+</html>

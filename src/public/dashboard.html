@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VindhyaMotors</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-car'></i>
+            <span class="text" style="color: yellow;">Vindhya<span style="color: blue;">Motors</span></span>
+        </a>
+        <ul class="side-menu top">
+            <li class="active">
+                <a href="#">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="text ">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="mybooking.html">
+                    <i class='bx bxs-shopping-bag-alt'></i>
+                    <span class="booking-link">My Booking</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-doughnut-chart'></i>
+                    <span class="text" id="C">Cart</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-message-dots'></i>
+                    <span class="text">Support</span>
+                </a>
+            </li>
+
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-smile'></i>
+                    <span class="profile-btn">Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bxs-log-out-circle'></i>
+                    <span class="text">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section id="content">
+        <nav>
+            <i class='bx bx-menu'></i>
+            <a href="#" class="nav-link">Categories</a>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="switch-mode" hidden>
+            <label for="switch-mode" class="switch-mode"></label>
+            <a href="#" class="profile"></a>
+        </nav>
+
+        <!-- main-->
+        <main>
+            <div class="head-title">
+                <div class="left">
+                    <h1>Dashboard</h1>
+                    <ul class="b">
+                        <li>
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li><i class='bx bx-chevron-right'></i></li>
+                        <li>
+                            <a class="active" href="#">Home</a>
+                        </li>
+                    </ul>
+
+                    <ul class="box-info">
+                        <li>
+                            <i class='bx bxs-group'></i>
+                            <span class="text">
+                                <h3>1000+</h3>
+                                <p>Customer base</p>
+                            </span>
+                        </li>
+                        <li>
+                            <i class='bx bxs-car-mechanic'></i>
+                            <span class="text">
+                                <h3>50+</h3>
+                                <p>Services available</p>
+                            </span>
+                        </li>
+                        <li>
+                            <i class='bx bxs-car-mechanic'></i>
+                            <span class="text">
+                                <h3>25+</h3>
+                                <p>Workers</p>
+                            </span>
+                        </li>
+                        <li>
+                            <i class='bx bxs-car-mechanic'></i>
+                            <span class="text">
+                                <h3>3+</h3>
+                                <p>Tie up Companies</p>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="table-data">
+                        <div class="order">
+                            <div class="head">
+                                <h3>Services</h3>
+                                <i class='bx bx-search'></i>
+                                <i class='bx bx-filter'></i>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Service</th>
+                                        <th>Price</th>
+                                        <th>Book</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                        
+                                            <p>Car Wash</p>
+                                        </td>
+                                        <td>500</td>
+                                        <td><button class="car-wash1">Book</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        
+                                            <p>Car Polishing</p>
+                                        </td>
+                                        <td>400</td>
+                                        <td><button class="car-wash2">Book</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        
+                                            <p>Doorstep wash</p>
+                                        </td>
+                                        <td>1200</td>
+                                        <td><button class="car-wash3">Book</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        
+                                            <p>Parts repair</p>
+                                        </td>
+                                        <td>10000</td>
+                                        <td><button class="car-wash4">Book</button></td>
+                                    </tr>
+                        </div>
+        </main>
+    </section>
+    <section id="profile-section" class="profile-section">
+        <img src="no-profile-picture-icon.webp" alt="" class="img">
+        <div class="welcome">Welcome, <span id="username"></span></div>
+        <p class="profile-p">Don't forgot to book services!!</p>
+    </section>
+    <section class="cart-section">
+        <div class="cart-header">
+            <h2>Service Cart</h2>
+            <button class="close-cart-btn">×</button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added dynamically here -->
+        </div>
+        <div class="cart-total">
+            <h3>Total: <span class="total-amount">Rs0.00</span></h3>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </section>
+
+
+
+
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VindhyaMotors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="home1.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>Vindhya</span>Motors</a>
+
+
+        <nav class="navbar">
+            <!-- <a href="#home">home</a> -->
+            <!-- <a href="#vehicles">home</a> -->
+            <a href="#services">our services</a>
+            <!-- <a href="#featured">featured</a> -->
+            <a href="#aboutus">about us</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div id="login-btn">
+            <button class="btn">Login</button>
+            <i class="far fa-user"></i>
+        </div>
+
+
+    </header>           
+
+    <div class="login-form-container">
+
+        <span class="fas fa-times" id="close-login-form"></span>
+
+        <form action="/login" method="post">
+            <h3>user login</h3>
+            <!-- <input type="text" name="username" class="box" placeholder="Enter username" required autocomplete="off"> -->
+            <input type="email"  name="email" class="box" placeholder="Enter your email" required autocomplete="off">
+            <input type="password" name="password" class="box" placeholder="password" required>
+            <p>forget your password <a href="#">Click here</a></p>
+            <button type="submit" class="submit-btn">Login</button>
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="btn">google</a>
+                <a href="#" class="btn">facebook</a>
+
+
+            </div>
+            <p>don't have an account? <a href="signup.html">signup</a></p>
+
+
+        </form>
+    </div>
+    <!--Home section-->
+    
+
+    <section class="home" id="home">
+    <marquee behavior="" class="marq" direction="left" bgcolor="lightyellow" scrollamount="17"  >Kindly Note: This site is under maintanance some of functonality will not work!!</marquee>
+        <h1 class="home-parallax" data-speed="-2">Need a car makeover</h1>
+        <div class="image-container">
+            
+            <img src="pexels-mikebirdy-120049.jpg" data-speed="5" alt="" class="home-parallax1">
+            <div id="signupbtn"><a href="#" class="btn home-parallax1 explore-btn">Signup</a></div>
+        </div>
+    </section>
+
+    <!--Icon section-->
+
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fas fa-home"></i>
+            <div class="content">
+                <h3>2</h3>
+                <p>branches</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>1000+</h3>
+                <p>cars serviced</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-users"></i>
+            <div class="content">
+                <h3>1000+</h3>
+                <p>happy clients</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>1000+</h3>
+                <p>parts replaced</p>
+            </div>
+        </div>
+    </section>
+
+    <!--services-->
+    <section class="services" id="services">
+
+        <h1 class="heading">Our <span>Servies</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-car"></i>
+                <h3>car wash</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, veniam.
+                </p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-tools"></i>
+                <h3>parts repair</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, veniam.
+                </p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-car-crash"></i>
+                <h3>car insurance</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, veniam.
+                </p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-gas-pump"></i>
+                <h3>oil change</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, veniam.
+                </p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 support</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, veniam.
+                </p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!--About us-->
+    <section class="aboutus" id="aboutus">
+        <div class="h1">About <span>us</span></div>
+        <div class="founder">
+            <div class="box">
+                <img src="no-profile-picture-icon.webp" alt="" class="fnd">
+                <h3 class="h31">Founder</h3>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p> -->
+            </div>
+            <div class="box">
+                <img src="IMG-20240117-WA0000(1).jpg" alt="" class="fnd1"></i>>
+                <h3 class="h32">CoFounder</h3>
+                <!-- <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.</p> -->
+            </div>
+        </div>
+        <div class="aboutbox">
+            <div class="box">
+                <p><span>VindhyaMotors</span>, a startup that has been in operation since <span>2005</span>, embarked on
+                    its journey from the
+                    historic city of <span>Mirzapur</span>, Uttar Pradesh. In <span>2021</span>, we further solidified
+                    our presence in the region
+                    by establishing another center in the bustling city of <span>Varanasi</span>. With a footprint now
+                    in two major
+                    cities of Uttar Pradesh, <span>VindhyaMotors</span> has become a cornerstone in the automotive
+                    service industry.
+                    We pride ourselves on offering a comprehensive range of services to our customers, including car
+                    wash, car polish, detailing, painting, accident handling, insurance assistance, parts replacement,
+                    and more. With a dedicated team and unwavering commitment to quality, we have garnered the trust of
+                    over 250 satisfied customers each month across both our centers. As we look to the future, our
+                    vision extends beyond regional boundaries; we are on the cusp of expanding our centers across India,
+                    aiming to provide our exceptional services to even more customers nationwide.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--contact section-->
+    <section class="contactus" id="contactus">
+        <h1 class="heading"> <span>contact </span>us</h1>
+        <div class="row">
+
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57788.28843327589!2d82.51027881338088!3d25.143532302654908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398fc1ca0ad8cfb5%3A0xd0218588b2986e11!2sMirzapur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1713509975976!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form action="">
+                <h3>get in touch</h3>
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="number" class="box">
+                <textarea placeholder="message" class="box" cols="30" rows="10"></textarea>
+                <button type="submit" class="btn">send message</button>
+            </form>
+
+        </div>
+    </section>
+    <!--Footer Section-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"><i class="fas fa-map-marker-alt"> Mirzapur</i></a>
+                <a href="#"><i class="fas fa-map-marker-alt"> Varanasi</i></a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#"><i class="fas fa-arrow-right"> home</i></a>
+                <a href="#"><i class="fas fa-arrow-right"> services</i></a>
+                <a href="#"><i class="fas fa-arrow-right"> contact</i></a>
+    
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#"><i class="fas fa-phone"> +918572915037</i></a><br>
+                <a href="#"><i class="fas fa-envalope"> VindhyaMotors@contact.in</i></a>
+                <a href="#"><i class="fas fa-map-marker-alt"> Adalhat Mirzapur Up</i></a>
+    
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#"><i class="fab fa-facebook"> facebook</i></a>
+                <a href="#"><i class="fab fa-twitter"> twitter</i></a>
+                <a href="#"><i class="fab fa-instagram"> instagram</i></a>
+                <a href="#"><i class="fab fa-linkedin"> linkedin</i></a>
+    
+            </div>
+        </div>
+        <div class="credit">&copy; VindhyaMotors|all rights reserved!|</div>
+    </section>
+
+
+
+
+
+
+    <script src="home1.js"></script>
+
+</body>
+
+</html>
